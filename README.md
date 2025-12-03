@@ -80,18 +80,6 @@ ESC	Выход
 📂 Загрузить OBJ — импорт модели
 ⏸ Пауза / ⟲ Сброс — управление анимацией
 
-📁 Структура проекта
-
-├── main.py              # UI (ModernButton, ModernSlider, ControlPanel)
-├── graphics.py          # Рендерер + Z-Buffer + растеризация
-├── geometry.py          # Генератор геометрии (8 форм + параметрические)
-├── Math3D.py            # Матрица 4×4, векторные операции, проекция
-├── math_utils.py        # Брезенхэм, Lambert Shading, Backface Culling
-├── obj_loader.py        # OBJ парсер & экспортер
-├── parameters.py        # Конфиг (размеры, цвета, параметры)
-├── models/              # Папка для OBJ файлов
-└── README.md
-
 🧮 Основные алгоритмы
 
 1️⃣ Z-буфер (без сортировки!)
