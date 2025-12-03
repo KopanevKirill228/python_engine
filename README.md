@@ -53,7 +53,8 @@ License: MIT
 bash
 # 1. Клонируй репо
 git clone https://github.com/KopanevKirill228/python_engine.git
-cd 3d-graphics-engine
+
+cd python_engine
 
 # 2. Установи зависимости
 pip install pygame
@@ -80,7 +81,7 @@ ESC	Выход
 ⏸ Пауза / ⟲ Сброс — управление анимацией
 
 📁 Структура проекта
-text
+
 ├── main.py              # UI (ModernButton, ModernSlider, ControlPanel)
 ├── graphics.py          # Рендерер + Z-Buffer + растеризация
 ├── geometry.py          # Генератор геометрии (8 форм + параметрические)
@@ -92,11 +93,12 @@ text
 └── README.md
 
 🧮 Основные алгоритмы
+
 1️⃣ Z-буфер (без сортировки!)
 Подход: для каждого пикселя интерполируем Z через барицентрические координаты и сравниваем с буфером. Не требует предварительной сортировки граней — правильный порядок достигается автоматически!
 
-python
 # Для каждого пикселя в треугольнике:
+
 z_interpolated = u*z1 + v*z2 + w*z3  # барицентрическая интерполяция
 if z_interpolated < z_buffer[y][x]:
     z_buffer[y][x] = z_interpolated
