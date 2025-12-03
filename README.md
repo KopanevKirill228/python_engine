@@ -52,7 +52,7 @@ License: MIT
 🚀 Установка & Запуск
 bash
 # 1. Клонируй репо
-git clone https://github.com/yourusername/3d-graphics-engine.git
+git clone https://github.com/KopanevKirill228/python_engine.git
 cd 3d-graphics-engine
 
 # 2. Установи зависимости
